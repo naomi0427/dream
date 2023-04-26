@@ -1,24 +1,60 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Me テーブル
 
-Things you may want to cover:
+| Column             | Type    | Options     |
+| ------------------ | ------- | ----------- |
+| profile            | text    | null: false |
 
-* Ruby version
+## Candles テーブル
 
-* System dependencies
+| Column             | Type    | Options     |
+| ------------------ | ------- | ----------- |
+| name               | string  | null: false |
+| explain            | text    | null: false |
+| price              | integer |             |
 
-* Configuration
+### Association
+- has_many :Aromas
 
-* Database creation
 
-* Database initialization
+## Aromas テーブル
 
-* How to run the test suite
+| Column             | Type    | Options     |
+| ------------------ | ------- | ----------- |
+| name               | string  | null: false |
+| explain            | text    | null: false |
 
-* Services (job queues, cache servers, search engines, etc.)
+### Association
+- has_many :Candles
 
-* Deployment instructions
 
-* ...
+## Events テーブル
+
+| Column             | Type    | Options     |
+| ------------------ | ------- | ----------- |
+| name               | string  | null: false |
+| place              | string  | null: false |
+| description        | text    | null: false |
+
+### Association
+- has_many :Workshops
+
+
+## Workshops テーブル
+
+| Column             | Type    | Options     |
+| ------------------ | ------- | ----------- |
+| name               | string  | null: false |
+| explain            | text    | null: false |
+
+### Association
+- has_many :Events
+
+
+## Others
+| Column             | Type    | Options     |
+| ------------------ | ------- | ----------- |
+| name               | string  | null: false |
+| explain            | text    | null: false |
+| price              | integer |             |
