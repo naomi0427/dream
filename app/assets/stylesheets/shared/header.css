@@ -15,10 +15,12 @@
   padding-top: 100px;
   font-family: 'Sawarabi Mincho', serif;
   font-size: 20px;
+  padding-right: 210px;
 }
 .main-nav {
   display: flex;
   padding-top: 100px;
+  padding-right: 36px;
   font-size: 1.25rem;
   list-style: none;
 }
