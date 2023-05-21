@@ -17,3 +17,29 @@
 .swiper-button-prev {
   swiper-navigation-color: #50759b; 
 }
+/*/スライダープラグイン*/
+
+/*ニュース-キャンドル一覧*/
+.news-candle {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  background-color: bisque;
+
+}
+.news {
+  background-color: aqua;
+  width: 30%;
+  height: 400px;
+  
+}
+.candle {
+  width: 50%;
+  height: 400px;
+  background-color: chartreuse;
+}
+
+
+
+
+/*/ニュース-キャンドル一覧*/
