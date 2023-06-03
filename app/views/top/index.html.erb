@@ -23,13 +23,25 @@
 <div class="news-candle">
   <!--ニュース-->
   <div class="news">
-  ニュース
+  <h1>イベント情報一覧</h1>
+  
+    <div class="event-list">
+      <% 3.times do |event| %>
+        <div class="event">
+          <p class="event-name">name:北谷雑貨１グランプリ</p>
+          <p class="category">category:フリーマーケット</p>
+          <p class="date">date:2023/6/15</p>
+        </div>
+        <div class="event-space"></div>
+      <% end %>
+    </div>
   </div>
   <!--/ニュース-->
 
   <!--キャンドル一覧-->
   <div class="candle">
-  キャンドル一覧
+  <%= image_tag "coffee-candle.jpeg" , class: "img" %>
+  <p>キャンドル一覧</p>
   </div>
   <!--/キャンドル一覧-->
 

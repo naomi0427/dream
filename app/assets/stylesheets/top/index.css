@@ -1,6 +1,10 @@
 /*共通部分*/
+* {
+  font-family: 'Sawarabi Mincho', serif;
+}
 .img {
   object-fit: cover;
+  border-radius: 1%;
 }
 
 /*/共通部分*/
@@ -16,7 +20,6 @@
 .swiper-slide img {
   width:100%;
 	height:100%;
-  border-radius: 1%;
 }
 
 .swiper-button-next,
@@ -30,22 +33,50 @@
   display: flex;
   justify-content: center;
   margin-top: 25px;
-  background-color: bisque;
-
 }
+
+/*ニュース*/
 .news {
-  background-color: aqua;
-  width: 30%;
-  height: 400px;
-  
+border: #50759b;
+margin: 20px;
+height: 450px;
+width: 35%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
 }
+.news h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.event {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.event-space {
+  height: 10px; /* スペースの高さ */
+}
+/*/ニュース*/
+
+/*キャンドル一覧*/
 .candle {
-  width: 50%;
-  height: 400px;
-  background-color: chartreuse;
+  width: 45%;
+  height: 450px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+  margin-top: 10px;
 }
-
-
-
+.candle img{
+  height: 400px;
+  width: 85%;
+  object-fit: cover;
+}
+.
+/*/キャンドル一覧*/
 
 /*/ニュース-キャンドル一覧*/
